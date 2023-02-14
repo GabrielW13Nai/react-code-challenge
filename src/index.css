@@ -29,8 +29,9 @@ body {
 
 .img{
   position: relative;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   max-width: 5%;
-  padding: 5%;
+  padding: 5rem;
   max-width: 50px;
+  
 }
