@@ -30,6 +30,7 @@ body {
 .img{
   position: relative;
   flex-wrap: wrap;
-  max-width: 20%;
+  max-width: 5%;
   padding: 5%;
+  max-width: 50px;
 }
