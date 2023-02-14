@@ -22,3 +22,14 @@ body {
 .ui.grid {
   padding: 0px 20px;
 }
+
+.attributes{
+  flex-wrap: nowrap;
+}
+
+.img{
+  position: relative;
+  flex: content;
+  max-width: 20%;
+  padding: 15%;
+}
