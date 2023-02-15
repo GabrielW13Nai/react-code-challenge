@@ -15,12 +15,11 @@ function BotSpecs(bot) {
       <div className="ui two column centered grid">
         <div className="row">
           <div className="four wide column">
-            {/* <img
-              src={bot.avatar}
+            <img
+              src={bot.avatar_url}
               alt="oh no!"
-              className="ui medium circular image bordered" */}
-{/*               
-            /> */}
+              className="ui medium circular image bordered" 
+            />
           </div>
           <div className="four wide column">
             <h2>Name: {bot.name}</h2>

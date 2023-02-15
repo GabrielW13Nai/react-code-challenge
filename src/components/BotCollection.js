@@ -17,7 +17,7 @@ function BotCollection( ) {
       <div className="row">
         <div>
           {botdata.map((info) =>{
-        return <BotSpecs name ={info.name} catchphrase = {info.catchphrase} health={info.health} damage = {info.damage} 
+        return <BotSpecs avatar_url = {info.avatar_url} name ={info.name} catchphrase = {info.catchphrase} health={info.health} damage = {info.damage} 
         armor= {info.armor}  />
           } 
           )}
