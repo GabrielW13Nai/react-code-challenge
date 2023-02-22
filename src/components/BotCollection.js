@@ -1,27 +1,29 @@
 import React, { useState, useEffect } from "react";
 import BotSpecs from "./BotSpecs";
+import YourBotArmy from "./YourBotArmy";
 const baseURL = 'http://localhost:8002/bots'
 
-function BotCollection( ) {
+function BotCollection({bots}) {
   const[botdata, Setbots] = useState([])
   
-
   useEffect(() => {
     fetch('http://localhost:8002/bots')
     .then((r) => r.json()
     .then(data=> Setbots(data)))
   },[])
+<BotCollection />;
+const botreturn = botdata.map((info) =>{
+    return <BotSpecs avatar_url = {info.avatar_url} name ={info.name} catchphrase = {info.catchphrase} health={info.health} damage = {info.damage} 
+    armor= {info.armor} />} 
+    )
+  
+
   
   return (
-    <div className="ui four column grid">
+    <div className="ui four column grid" >
       <div className="row">
         <div>
-          {botdata.map((info) =>{
-        return <BotSpecs avatar_url = {info.avatar_url} name ={info.name} catchphrase = {info.catchphrase} health={info.health} damage = {info.damage} 
-        armor= {info.armor}  />
-          } 
-          )}
-        Collection of all bots
+          {botreturn} 
         </div>
       </div>
     </div>

@@ -27,11 +27,10 @@ body {
   flex-wrap: nowrap;
 }
 
-.img{
-  position: relative;
-  flex-wrap: nowrap;
-  max-width: 5%;
-  padding: 5rem;
-  max-width: 20px;
+.four.wide.column{
+  max-width: 25%;
+  object-fit:scale-down;
+  flex-wrap: wrap;
+  float:right;
   
 }
